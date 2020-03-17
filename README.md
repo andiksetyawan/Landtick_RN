@@ -50,7 +50,7 @@ Wait till the application is opened into your device. Now, you can explore Landt
 
 ## Screenshots
 
-<img src="docs/screenshots/screnshoots.png" />
+<img src="docs/screenshots/screenshots.png" />
 
 ## Built With
 
