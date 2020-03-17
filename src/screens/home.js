@@ -32,24 +32,33 @@ import Svg, {Circle} from 'react-native-svg';
 
 const {height, width} = Dimensions.get('window');
 
-import Swiper from 'react-native-swiper';
+// import Swiper from 'react-native-swiper';
 
 export default class Landing extends React.Component {
   render() {
     return (
       <Container>
-        <Header style={{backgroundColor: '#0063D3'}}>
-          {/* <Left>
-            <Button transparent>
-              <Icon name="arrow-back" />
-            </Button>
-          </Left> */}
-          <Body>
-            <Title style={{marginLeft: 20, fontWeight: 'bold'}}>
+        <Header
+          style={{
+            backgroundColor: '#0063D3',
+            textAlign: 'left',
+            borderBottomWidth: 0,
+          }}>
+          <Left>
+            <Title
+              style={{marginLeft: 20, fontWeight: 'bold', color: '#ffffff'}}>
               land
-              <Title style={{fontWeight: 'normal'}}>tick</Title>
+              <Title style={{fontWeight: 'normal', color: '#ffffff'}}>
+                tick
+              </Title>
             </Title>
-          </Body>
+          </Left>
+          {/* <Body style={{textAlign:"left"}}>
+            <Title style={{marginLeft: 20, fontWeight: 'bold',color:"#ffffff"}}>
+              land
+              <Title style={{fontWeight: 'normal',color:"#ffffff"}}>tick</Title>
+            </Title>
+          </Body> */}
         </Header>
         <Content>
           <View style={{height: height / 4.5}}>
@@ -137,24 +146,24 @@ export default class Landing extends React.Component {
 
             <TouchableHighlight onPress={() => {}} underlayColor="white">
               <Card style={styles.menuItem}>
-                <Icon name="train" />
-                <Text>Kereta Api</Text>
+                <Icon name="train" style={{color: '#b7b7b7', fontSize: 40}} />
+                <Text style={{color: '#b7b7b7'}}>Kereta Api</Text>
               </Card>
             </TouchableHighlight>
             <TouchableHighlight onPress={() => {}} underlayColor="white">
               <Card style={styles.menuItem}>
-                <Icon name="airplane" />
-                <Text>Pesawat</Text>
+                <Icon name="airplane" style={{color: '#b7b7b7', fontSize: 40}} />
+                <Text style={{color: '#b7b7b7'}}>Pesawat</Text>
               </Card>
             </TouchableHighlight>
             <TouchableHighlight onPress={() => {}} underlayColor="white">
               <Card style={styles.menuItem}>
-                <Icon name="document" />
-                <Text>Event</Text>
+                <Icon name="document" style={{color: '#b7b7b7', fontSize: 40}} />
+                <Text style={{color: '#b7b7b7'}}>Event</Text>
               </Card>
             </TouchableHighlight>
           </View>
-          <View style={{marginLeft:25, marginTop:30}}>
+          <View style={{marginLeft: 25, marginTop: 30}}>
             <Text>Petualangan seru di Indonesia</Text>
           </View>
           <View
